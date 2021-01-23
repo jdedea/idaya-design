@@ -1,0 +1,509 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+input, textarea, select {
+  font: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Archia";
+  font-weight: 400;
+  src: url("archia-regular-webfont.woff2") format("woff2"), url("archia-regular-webfont.woff") format("woff"), url("archia-regular-webfont.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Archia";
+  font-weight: 500;
+  src: url("archia-medium-webfont.woff2") format("woff2"), url("archia-medium-webfont.woff") format("woff"), url("archia-medium-webfont.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Archia";
+  font-weight: 600;
+  src: url("archia-semibold-webfont.woff2") format("woff2"), url("archia-semibold-webfont.woff") format("woff"), url("archia-semibol-webfont.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Archia";
+  font-weight: 700;
+  src: url("archia-bold-webfont.woff2") format("woff2"), url("archia-bold-webfont.woff") format("woff"), url("archia-bold-webfont.ttf") format("ttf");
+}
+.shapes {
+  position: absolute;
+  z-index: -3;
+}
+
+/* Header */
+header img.top-circle {
+  right: 0;
+  top: 0;
+  width: 35%;
+}
+
+/* Skills Section */
+section.skills img.dots {
+  width: 30%;
+  right: 0;
+  top: -7%;
+}
+section.skills img.left-square {
+  width: 45%;
+  left: 0;
+  top: 15%;
+}
+section.skills img.right-square {
+  width: 40%;
+  right: 0;
+  top: 13%;
+}
+
+/* Connect Section */
+section.connect img.square {
+  width: 25%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+section.connect img.circle {
+  width: 20%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+section.projects img.star {
+  right: 38%;
+  top: 5%;
+  width: 50px;
+  z-index: -1;
+}
+
+section.projects img.star:nth-of-type(2) {
+  left: 4%;
+  top: 10%;
+}
+
+section.projects img.star:nth-of-type(3) {
+  left: 90%;
+  top: 15%;
+}
+
+section.projects img.star:nth-of-type(4) {
+  left: 50%;
+  top: 20%;
+}
+
+section.projects img.star:nth-of-type(5) {
+  left: 11%;
+  top: 25%;
+}
+
+section.projects img.star:nth-of-type(6) {
+  left: 85%;
+  top: 30%;
+}
+
+section.projects img.star:nth-of-type(7) {
+  left: 70%;
+  top: 35%;
+}
+
+section.projects img.star:nth-of-type(8) {
+  left: 65%;
+  top: 40%;
+}
+
+section.projects img.star:nth-of-type(9) {
+  left: 47%;
+  top: 45%;
+}
+
+section.projects img.star:nth-of-type(10) {
+  left: 6%;
+  top: 50%;
+}
+
+section.projects img.star:nth-of-type(11) {
+  left: 88%;
+  top: 55%;
+}
+
+section.projects img.star:nth-of-type(12) {
+  left: 53%;
+  top: 60%;
+}
+
+section.projects img.star:nth-of-type(13) {
+  left: 18%;
+  top: 65%;
+}
+
+section.projects img.star:nth-of-type(14) {
+  left: 80%;
+  top: 70%;
+}
+
+section.projects img.star:nth-of-type(15) {
+  left: 48%;
+  top: 75%;
+}
+
+section.projects img.star:nth-of-type(16) {
+  left: 89%;
+  top: 80%;
+}
+
+section.projects img.star:nth-of-type(17) {
+  left: 11%;
+  top: 85%;
+}
+
+section.projects img.star:nth-of-type(18) {
+  left: 70%;
+  top: 90%;
+}
+
+section.projects img.star:nth-of-type(19) {
+  left: 40%;
+  top: 95%;
+}
+
+body {
+  font-family: "Archia", sans-serif;
+  font-size: 2rem;
+  color: #594a4e;
+  background-color: #faeee7;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h1,
+h2 {
+  font-size: 7.5rem;
+  color: #33272a;
+  z-index: 1;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+section {
+  position: relative;
+}
+
+header {
+  max-width: 1000px;
+  margin: 60px auto 0 auto;
+  padding: 20px;
+}
+header .intro {
+  margin-top: 72px;
+  max-width: 870px;
+  margin-bottom: 75px;
+}
+header p {
+  line-height: 1.25;
+}
+
+/* Skills Section  */
+section.skills h2 {
+  max-width: 1000px;
+  margin: 60px auto 0 auto;
+  padding: 20px;
+}
+section.skills .skillset {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 5%;
+}
+section.skills .dev-skills,
+section.skills .des-skills {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+section.skills div img {
+  margin-top: 5%;
+  width: 65%;
+}
+
+section.projects {
+  position: relative;
+  background-color: #ffc6c7;
+  z-index: 1;
+  overflow: hidden;
+}
+section.projects h2 {
+  max-width: 1000px;
+  margin: 60px auto 0 auto;
+  padding: 20px;
+}
+section.projects div.proj-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 50px auto 0 auto;
+  padding: 20px 20px 40px 20px;
+}
+section.projects a.proj-left {
+  width: 50%;
+  padding-right: 15px;
+}
+section.projects a.proj-right {
+  width: 50%;
+  margin-top: 35px;
+  padding-left: 15px;
+}
+
+section.connect {
+  min-height: 100vh;
+  padding-top: 20px;
+  position: relative;
+  background-color: #c3f0ca;
+}
+section.connect h2 {
+  margin-bottom: 0;
+  max-width: 1000px;
+  margin: 60px auto 0 auto;
+  padding: 20px;
+}
+section.connect p {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1rem;
+}
+section.connect div.pfp,
+section.connect div.left,
+section.connect div.right {
+  z-index: 2;
+}
+section.connect div.left,
+section.connect div.right {
+  padding-top: 15px;
+}
+section.connect div.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+section.connect div.pfp {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  z-index: 2;
+}
+section.connect div.left {
+  width: 32%;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+section.connect div.right {
+  width: 32%;
+  padding-right: 10px;
+}
+section.connect div.content img {
+  margin-top: 20px;
+}
+
+@media (max-width: 1065px) {
+  section.skills div img {
+    width: 80%;
+  }
+}
+@media (max-width: 885px) {
+  section.skills div.skillset {
+    margin-bottom: 150px;
+  }
+  section.skills img.left-square {
+    width: 200px;
+    top: 50px;
+  }
+  section.skills img.right-square {
+    width: 165px;
+    top: 55px;
+  }
+
+  section.connect div.content {
+    flex-direction: column;
+  }
+  section.connect h2 {
+    margin-bottom: 25px;
+  }
+  section.connect div.pfp {
+    width: 70%;
+  }
+  section.connect div.left,
+section.connect div.right {
+    width: 60%;
+  }
+  section.connect div.pfp,
+section.connect div.left,
+section.connect div.right {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  section.connect div.right {
+    margin-bottom: 50px;
+  }
+  section.connect img.square {
+    width: 225px;
+  }
+}
+@media (max-width: 720px) {
+  section.skills img.left-square {
+    top: 95px;
+  }
+  section.skills img.right-square {
+    top: 100px;
+  }
+  section.skills div.dev-skills {
+    margin-bottom: 50px;
+  }
+  section.skills div.skillset {
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  header div.intro {
+    margin-top: 72px;
+    margin-bottom: 10px;
+  }
+
+  section.projects img.star {
+    width: 35px;
+  }
+  section.projects div.proj-list {
+    flex-direction: column;
+  }
+  section.projects a.proj-left,
+section.projects a.proj-right {
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    transform: translateX(-3%);
+  }
+
+  section.connect p {
+    font-size: 10px;
+  }
+  section.connect div.pfp {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  section.connect div.left,
+section.connect div.right {
+    width: 80%;
+  }
+  section.connect img.circle {
+    width: 200px;
+  }
+  section.connect img.square {
+    width: 120px;
+  }
+}
+@media (max-width: 365px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+
+  section.skills img.left-square {
+    width: 110px;
+    top: 95px;
+  }
+  section.skills img.right-square {
+    width: 100px;
+    top: 100px;
+  }
+
+  section.connect p {
+    font-size: 8px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
