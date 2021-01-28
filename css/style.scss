@@ -26,7 +26,7 @@ $small: 600px;
   color: #33272a;
   z-index: 1;
   @include mq($small) {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
   }
 }
 
@@ -159,6 +159,13 @@ header {
     padding-top: 30px;
     @include mq($med) {
       padding-top: 0px;
+    }
+  }
+
+  .star {
+    width: 50px;
+    @include mq($med) {
+      width: 30px !important;
     }
   }
 

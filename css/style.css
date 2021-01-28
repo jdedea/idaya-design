@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,8 +87,17 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -28,17 +105,21 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
   content: none;
 }
 
@@ -47,12 +128,15 @@ table {
   border-spacing: 0;
 }
 
-img, iframe {
+img,
+iframe {
   vertical-align: bottom;
   max-width: 100%;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   font: inherit;
 }
 
@@ -65,27 +149,35 @@ input, textarea, select {
 }
 
 @font-face {
-  font-family: "Archia";
+  font-family: 'Archia';
   font-weight: 400;
-  src: url("../fonts/archia-regular-webfont.woff2") format("woff2"), url("../fonts/archia-regular-webfont.woff") format("woff"), url("../fonts/archia-regular-webfont.ttf") format("ttf");
+  src: url('../fonts/archia-regular-webfont.woff2') format('woff2'),
+    url('../fonts/archia-regular-webfont.woff') format('woff'),
+    url('../fonts/archia-regular-webfont.ttf') format('ttf');
 }
 @font-face {
-  font-family: "Archia";
+  font-family: 'Archia';
   font-weight: 500;
-  src: url("../fonts/archia-medium-webfont.woff2") format("woff2"), url("../fonts/archia-medium-webfont.woff") format("woff"), url("../fonts/archia-medium-webfont.ttf") format("ttf");
+  src: url('../fonts/archia-medium-webfont.woff2') format('woff2'),
+    url('../fonts/archia-medium-webfont.woff') format('woff'),
+    url('../fonts/archia-medium-webfont.ttf') format('ttf');
 }
 @font-face {
-  font-family: "Archia";
+  font-family: 'Archia';
   font-weight: 600;
-  src: url("../fonts/archia-semibold-webfont.woff2") format("woff2"), url("../fonts/archia-semibold-webfont.woff") format("woff"), url("../fonts/archia-semibol-webfont.ttf") format("ttf");
+  src: url('../fonts/archia-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/archia-semibold-webfont.woff') format('woff'),
+    url('../fonts/archia-semibol-webfont.ttf') format('ttf');
 }
 @font-face {
-  font-family: "Archia";
+  font-family: 'Archia';
   font-weight: 700;
-  src: url("../fonts/archia-bold-webfont.woff2") format("woff2"), url("../fonts/archia-bold-webfont.woff") format("woff"), url("../fonts/archia-bold-webfont.ttf") format("ttf");
+  src: url('../fonts/archia-bold-webfont.woff2') format('woff2'),
+    url('../fonts/archia-bold-webfont.woff') format('woff'),
+    url('../fonts/archia-bold-webfont.ttf') format('ttf');
 }
 body {
-  font-family: "Archia", sans-serif;
+  font-family: 'Archia', sans-serif;
 }
 
 .shapes {
@@ -131,7 +223,7 @@ section.connect img.circle {
   z-index: 1;
 }
 
-section.projects img.star {
+.star {
   right: 38%;
   top: 5%;
   width: 50px;
@@ -228,33 +320,40 @@ section.projects img.star:nth-of-type(19) {
   top: 95%;
 }
 
-header, h2 {
+header,
+h2 {
   max-width: 925px;
 }
 
-.projects .proj-list, header, h2 {
+.projects .proj-list,
+header,
+h2 {
   margin: 3rem auto 0 auto;
   padding: 20px;
 }
 
-h2, h1 {
+h2,
+h1 {
   font-size: 7.5rem;
   color: #33272a;
   z-index: 1;
 }
 @media (max-width: 600px) {
-  h2, h1 {
-    font-size: 4.5rem;
+  h2,
+  h1 {
+    font-size: 4.2rem;
   }
 }
 
-.projects .proj-list, .skills .skillset {
+.projects .proj-list,
+.skills .skillset {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2vw;
 }
 
-.connect .right, .connect .left {
+.connect .right,
+.connect .left {
   padding-top: 10px;
   padding-left: 5px;
   margin-right: 10px;
@@ -262,7 +361,9 @@ h2, h1 {
 }
 
 @media (max-width: 900px) {
-  .connect .content, .projects .proj-list, .skills .skillset {
+  .connect .content,
+  .projects .proj-list,
+  .skills .skillset {
     grid-template-columns: 1fr !important;
     justify-items: center;
   }
@@ -320,7 +421,7 @@ header .intro {
 }
 @media (max-width: 900px) {
   .skills .dev-skills,
-.skills .des-skills {
+  .skills .des-skills {
     margin-bottom: 50px;
   }
 }
@@ -348,6 +449,14 @@ header .intro {
 @media (max-width: 900px) {
   .projects .offset {
     padding-top: 0px;
+  }
+}
+.projects .star {
+  width: 50px;
+}
+@media (max-width: 900px) {
+  .projects .star {
+    width: 35px !important;
   }
 }
 .projects a {
