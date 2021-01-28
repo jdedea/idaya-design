@@ -21,10 +21,9 @@ header {
 
 section.skills {
   img.dots {
-    @include width(30%);
+    @include width(32%);
     right: 0;
-    top: -5vw;
-    transform: translateY(50%);
+    top: -6vw;
   }
 
   img.left-square {

@@ -56,7 +56,13 @@ $small: 600px;
   }
 }
 
+//-----------------
 // Main Styles
+//-----------------
+
+.unclickable {
+  pointer-events: none;
+}
 
 body {
   font-size: 2rem;
@@ -92,12 +98,9 @@ section {
   position: relative;
 }
 
-.unclickable {
-  pointer-events: none;
-}
-
+//-----------------
 // Header Styles
-
+//-----------------
 header {
   @extend %width;
   @extend %margins;
@@ -108,9 +111,10 @@ header {
   }
 }
 
+//-----------------
 // Skills Styles
-
-section.skills {
+//-----------------
+.skills {
   .skillset {
     @extend %grid;
     @extend %grid-med;
@@ -127,20 +131,21 @@ section.skills {
     }
   }
 
-  div img {
+  img {
     margin-top: 5%;
     width: 65%;
   }
 }
 
+//-----------------
 // Projects Section
-
-section.projects {
+//-----------------
+.projects {
   background-color: #ffc6c7;
   z-index: 1;
   overflow: hidden;
 
-  div.proj-list {
+  .proj-list {
     @extend %grid;
     @extend %grid-med;
     @extend %margins;
@@ -150,43 +155,34 @@ section.projects {
     }
   }
 
-  a {
-    margin-bottom: 20px;
-  }
-
   .offset {
     padding-top: 50px;
     @include mq($med) {
       padding-top: 0px;
     }
   }
+
+  a {
+    margin-bottom: 20px;
+  }
 }
 
+//-----------------
 // CONTENT SECTION
-
-section.connect {
+//-----------------
+.connect {
   min-height: 100vh;
   padding-top: 20px;
   background-color: #c3f0ca;
 
-  p {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 1rem;
-    @include mq($small) {
-      font-size: 0.7rem;
-    }
-  }
-
-  div.content {
+  .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     @extend %grid-med;
   }
 
-  div.pfp {
+  .pfp {
     padding: 1vw;
     z-index: 2;
     @include mq($med) {
@@ -194,7 +190,7 @@ section.connect {
     }
   }
 
-  div.left {
+  .left {
     @extend %socials;
     @include mq($med) {
       width: 80%;
@@ -203,7 +199,7 @@ section.connect {
     }
   }
 
-  div.right {
+  .right {
     @extend %socials;
     @include mq($med) {
       width: 80%;
@@ -213,7 +209,17 @@ section.connect {
     }
   }
 
-  div.content img {
+  .content img {
     margin-top: 20px;
+  }
+
+  p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1rem;
+    @include mq($small) {
+      font-size: 0.7rem;
+    }
   }
 }
