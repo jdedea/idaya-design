@@ -23,7 +23,8 @@ section.skills {
   img.dots {
     @include width(30%);
     right: 0;
-    top: -7%;
+    top: -5vw;
+    transform: translateY(50%);
   }
 
   img.left-square {
@@ -50,7 +51,7 @@ section.connect {
   }
 
   img.circle {
-    @include width(20%);
+    @include width(16%);
     top: 0;
     right: 0;
     z-index: 1;
