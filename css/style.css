@@ -343,7 +343,7 @@ header .intro {
   }
 }
 .projects .offset {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 @media (max-width: 900px) {
   .projects .offset {
