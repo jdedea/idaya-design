@@ -3,88 +3,88 @@
 @import 'shapes';
 @import 'stars';
 
+%width {
+  max-width: 925px;
+}
+
+%margins {
+  margin: 3rem auto 0 auto;
+  padding: 20px;
+}
+
+%heading {
+  font-size: 7.5rem;
+  color: #33272a;
+  z-index: 1;
+}
+
+%grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 // Main Styles
 
 body {
-  font-family: 'Archia', sans-serif;
   font-size: 2rem;
   color: #594a4e;
-
   background-color: #faeee7;
+  line-height: 1.1;
 }
 
-a {
-  text-decoration: none;
+p {
+  line-height: 1.25;
+}
+
+h1 {
+  font-weight: 600;
+  @extend %heading;
+}
+
+h2 {
+  font-weight: 500;
+  @extend %heading;
 }
 
 strong {
   font-weight: 700;
 }
 
-h1 {
-  font-weight: 600;
-}
-
-h2 {
-  font-weight: 500;
-}
-
-h1,
-h2 {
-  font-size: 7.5rem;
-  color: #33272a;
-  z-index: 1;
-}
-
-// Helper Classes
-
-@mixin margins() {
-  max-width: 1000px;
-  //centers the elements
-  margin: 60px auto 0 auto;
-  padding: 20px;
+section {
+  position: relative;
 }
 
 .unclickable {
   pointer-events: none;
 }
 
-section {
-  position: relative;
-}
-
 // Header Styles
 
 header {
-  @include margins();
+  @extend %width;
+  @extend %margins;
 
   .intro {
-    margin-top: 72px;
-    max-width: 870px;
+    margin-top: 4rem;
     margin-bottom: 75px;
   }
-
-  p {
-    line-height: 1.25;
-  }
 }
-/* Skills Section  */
+
+// Skills Styles
 
 section.skills {
   h2 {
-    @include margins();
+    @extend %width;
+    @extend %margins;
   }
   .skillset {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
+    @extend %grid;
     margin-top: 50px;
     margin-bottom: 5%;
   }
 
   .dev-skills,
   .des-skills {
-    width: 100%;
     text-align: center;
     position: relative;
   }
@@ -98,32 +98,19 @@ section.skills {
 // Projects Section
 
 section.projects {
-  position: relative;
   background-color: #ffc6c7;
   z-index: 1;
   overflow: hidden;
 
   h2 {
-    @include margins();
+    @extend %width;
+    @extend %margins;
   }
 
   div.proj-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 75%;
-    margin: 50px auto 0 auto;
-    padding: 20px 20px 40px 20px;
-  }
-
-  a.proj-left {
-    width: 50%;
-    padding-right: 15px;
-  }
-
-  a.proj-right {
-    width: 50%;
-    margin-top: 35px;
-    padding-left: 15px;
+    @extend %grid;
+    @extend %margins;
+    max-width: 85%;
   }
 }
 
@@ -132,12 +119,11 @@ section.projects {
 section.connect {
   min-height: 100vh;
   padding-top: 20px;
-  position: relative;
   background-color: #c3f0ca;
 
   h2 {
-    margin-bottom: 0;
-    @include margins();
+    @extend %width;
+    @extend %margins;
   }
 
   p {
@@ -151,39 +137,33 @@ section.connect {
   div.left,
   div.right {
     z-index: 2;
+    width: 30%;
   }
 
   div.left,
   div.right {
-    padding-top: 15px;
+    // Centers the text better
+    padding-top: 10px;
   }
 
   div.content {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
 
   div.pfp {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-right: 20px;
-
-    z-index: 2;
   }
 
   div.left {
-    width: 32%;
     padding-left: 10px;
     margin-right: 20px;
   }
 
   div.right {
-    width: 32%;
     padding-right: 10px;
   }
 
@@ -194,29 +174,7 @@ section.connect {
 
 // MEDIA QUERIES
 
-@media (max-width: 1065px) {
-  section.skills div img {
-    width: 80%;
-  }
-}
-
 @media (max-width: 885px) {
-  section.skills {
-    div.skillset {
-      margin-bottom: 150px;
-    }
-
-    img.left-square {
-      width: 200px;
-      top: 50px;
-    }
-
-    img.right-square {
-      width: 165px;
-      top: 55px;
-    }
-  }
-
   section.connect {
     div.content {
       flex-direction: column;
