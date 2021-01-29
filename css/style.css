@@ -95,26 +95,26 @@ body {
 
 /* Header */
 header img.top-circle {
-  right: 0;
-  top: 0;
   width: 35%;
+  top: 0;
+  right: 0;
 }
 
 /* Skills Section */
 section.skills img.dots {
   width: 32%;
-  right: 0;
   top: -6vw;
+  right: 0;
 }
 section.skills img.left-square {
   width: 45%;
-  left: 0;
   top: 15%;
+  left: 0;
 }
 section.skills img.right-square {
   width: 40%;
-  right: 0;
   top: 13%;
+  right: 0;
 }
 
 /* Connect Section */
@@ -254,7 +254,8 @@ h2, h1 {
   grid-column-gap: 2vw;
 }
 
-.connect .right, .connect .left {
+.connect .left,
+.connect .right {
   padding-top: 10px;
   padding-left: 5px;
   margin-right: 10px;
@@ -265,6 +266,22 @@ h2, h1 {
   .connect .content, .projects .proj-list, .skills .skillset {
     grid-template-columns: 1fr !important;
     justify-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .connect .left,
+.connect .right {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .connect .right, .skills .dev-skills,
+.skills .des-skills {
+    margin-bottom: 50px;
   }
 }
 
@@ -318,12 +335,6 @@ header .intro {
   text-align: center;
   position: relative;
 }
-@media (max-width: 900px) {
-  .skills .dev-skills,
-.skills .des-skills {
-    margin-bottom: 50px;
-  }
-}
 .skills img {
   margin-top: 5%;
   width: 65%;
@@ -335,7 +346,7 @@ header .intro {
   overflow: hidden;
 }
 .projects .proj-list {
-  max-width: 85%;
+  max-width: 80%;
 }
 @media (max-width: 900px) {
   .projects .proj-list {
@@ -379,21 +390,6 @@ header .intro {
 @media (max-width: 900px) {
   .connect .pfp {
     width: 60%;
-  }
-}
-@media (max-width: 900px) {
-  .connect .left {
-    width: 80%;
-    margin: 0;
-    padding: 0;
-  }
-}
-@media (max-width: 900px) {
-  .connect .right {
-    width: 80%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 50px;
   }
 }
 .connect .content img {

@@ -6,6 +6,13 @@
 $med: 900px;
 $small: 600px;
 
+$fontbody: #594a4e;
+$fontheading: #33272a;
+
+$primarybg: #faeee7;
+$secondarybg: #ffc6c7;
+$tertiarybg: #c3f0ca;
+
 @mixin mq($width) {
   @media (max-width: $width) {
     @content;
@@ -22,12 +29,12 @@ $small: 600px;
 }
 
 %heading {
-  font-size: 7.5rem;
-  color: #33272a;
-  z-index: 1;
   @include mq($small) {
     font-size: 4.2rem;
   }
+  font-size: 7.5rem;
+  color: $fontheading;
+  z-index: 1;
 }
 
 %grid {
@@ -43,16 +50,24 @@ $small: 600px;
   z-index: 2;
 }
 
-%socials-med {
-  width: 80%;
-  margin: 0;
-  padding: 0;
-}
-
 %grid-med {
   @include mq($med) {
     grid-template-columns: 1fr !important;
     justify-items: center;
+  }
+}
+
+%socials-med {
+  @include mq($med) {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+%marg-bot-med {
+  @include mq($med) {
+    margin-bottom: 50px;
   }
 }
 
@@ -65,13 +80,13 @@ $small: 600px;
 }
 
 body {
-  font-size: 2rem;
-  color: #594a4e;
-  background-color: #faeee7;
-  line-height: 1.1;
   @include mq($small) {
     font-size: 1.7rem;
   }
+  font-size: 2rem;
+  color: $fontbody;
+  background-color: $primarybg;
+  line-height: 1.1;
 }
 
 p {
@@ -79,15 +94,15 @@ p {
 }
 
 h1 {
-  font-weight: 600;
   @extend %heading;
+  font-weight: 600;
 }
 
 h2 {
-  font-weight: 500;
   @extend %heading;
   @extend %width;
   @extend %margins;
+  font-weight: 500;
 }
 
 strong {
@@ -124,11 +139,9 @@ header {
 
   .dev-skills,
   .des-skills {
+    @extend %marg-bot-med;
     text-align: center;
     position: relative;
-    @include mq($med) {
-      margin-bottom: 50px;
-    }
   }
 
   img {
@@ -141,32 +154,31 @@ header {
 // Projects Section
 //-----------------
 .projects {
-  background-color: #ffc6c7;
+  background-color: $secondarybg;
   z-index: 1;
   overflow: hidden;
-
   .proj-list {
     @extend %grid;
     @extend %grid-med;
     @extend %margins;
-    max-width: 85%;
     @include mq($med) {
       transform: translateX(-3%);
     }
+    max-width: 80%;
   }
 
   .offset {
-    padding-top: 30px;
     @include mq($med) {
       padding-top: 0px;
     }
+    padding-top: 30px;
   }
 
   .star {
-    width: 50px;
     @include mq($med) {
       width: 30px !important;
     }
+    width: 50px;
   }
 
   a {
@@ -180,40 +192,31 @@ header {
 .connect {
   min-height: 100vh;
   padding-top: 20px;
-  background-color: #c3f0ca;
+  background-color: $tertiarybg;
 
   .content {
+    @extend %grid-med;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    @extend %grid-med;
   }
 
   .pfp {
-    padding: 1vw;
-    z-index: 2;
     @include mq($med) {
       width: 60%;
     }
+    padding: 1vw;
+    z-index: 2;
   }
 
-  .left {
+  .left,
+  .right {
     @extend %socials;
-    @include mq($med) {
-      width: 80%;
-      margin: 0;
-      padding: 0;
-    }
+    @extend %socials-med;
   }
 
   .right {
-    @extend %socials;
-    @include mq($med) {
-      width: 80%;
-      margin: 0;
-      padding: 0;
-      margin-bottom: 50px;
-    }
+    @extend %marg-bot-med;
   }
 
   .content img {
@@ -221,12 +224,12 @@ header {
   }
 
   p {
+    @include mq($small) {
+      font-size: 0.7rem;
+    }
     position: absolute;
     bottom: 10px;
     right: 10px;
     font-size: 1rem;
-    @include mq($small) {
-      font-size: 0.7rem;
-    }
   }
 }
