@@ -1,5 +1,5 @@
 //We grab all of the .stars from the html
-const stars = document.querySelectorAll('img.star')
+const stars = document.querySelectorAll('.star')
 
 // circles returns us an array so we need to loop through it
 // index refers to the item in the array we are working with
