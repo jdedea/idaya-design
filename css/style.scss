@@ -176,7 +176,7 @@ header {
 
   .star {
     @include mq($med) {
-      width: 30px !important;
+      width: 30px;
     }
     width: 50px;
   }

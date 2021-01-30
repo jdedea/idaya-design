@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,8 +87,17 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -28,16 +105,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -47,12 +128,15 @@ table {
   border-spacing: 0;
 }
 
-img, iframe {
+img,
+iframe {
   vertical-align: bottom;
   max-width: 100%;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   font: inherit;
 }
 
@@ -138,92 +222,92 @@ section.connect img.circle {
   z-index: -1;
 }
 
-section.projects img.star:nth-of-type(2) {
+.star:nth-of-type(2) {
   left: 4%;
   top: 10%;
 }
 
-section.projects img.star:nth-of-type(3) {
+.star:nth-of-type(3) {
   left: 90%;
   top: 15%;
 }
 
-section.projects img.star:nth-of-type(4) {
+.star:nth-of-type(4) {
   left: 50%;
   top: 20%;
 }
 
-section.projects img.star:nth-of-type(5) {
+.star:nth-of-type(5) {
   left: 11%;
   top: 25%;
 }
 
-section.projects img.star:nth-of-type(6) {
+.star:nth-of-type(6) {
   left: 85%;
   top: 30%;
 }
 
-section.projects img.star:nth-of-type(7) {
+.star:nth-of-type(7) {
   left: 70%;
   top: 35%;
 }
 
-section.projects img.star:nth-of-type(8) {
+.star:nth-of-type(8) {
   left: 65%;
   top: 40%;
 }
 
-section.projects img.star:nth-of-type(9) {
+.star:nth-of-type(9) {
   left: 47%;
   top: 45%;
 }
 
-section.projects img.star:nth-of-type(10) {
+.star:nth-of-type(10) {
   left: 6%;
   top: 50%;
 }
 
-section.projects img.star:nth-of-type(11) {
+.star:nth-of-type(11) {
   left: 88%;
   top: 55%;
 }
 
-section.projects img.star:nth-of-type(12) {
+.star:nth-of-type(12) {
   left: 53%;
   top: 60%;
 }
 
-section.projects img.star:nth-of-type(13) {
+.star:nth-of-type(13) {
   left: 18%;
   top: 65%;
 }
 
-section.projects img.star:nth-of-type(14) {
+.star:nth-of-type(14) {
   left: 80%;
   top: 70%;
 }
 
-section.projects img.star:nth-of-type(15) {
+.star:nth-of-type(15) {
   left: 48%;
   top: 75%;
 }
 
-section.projects img.star:nth-of-type(16) {
+.star:nth-of-type(16) {
   left: 89%;
   top: 80%;
 }
 
-section.projects img.star:nth-of-type(17) {
+.star:nth-of-type(17) {
   left: 11%;
   top: 85%;
 }
 
-section.projects img.star:nth-of-type(18) {
+.star:nth-of-type(18) {
   left: 70%;
   top: 90%;
 }
 
-section.projects img.star:nth-of-type(19) {
+.star:nth-of-type(19) {
   left: 40%;
   top: 95%;
 }
@@ -366,7 +450,7 @@ header .intro {
 }
 @media (max-width: 900px) {
   .projects .star {
-    width: 30px !important;
+    width: 30px;
   }
 }
 .projects a {
