@@ -174,41 +174,41 @@ body {
 
 .shapes {
   position: absolute;
-  z-index: -3;
+  z-index: -2;
 }
 
 /* Header */
-header img.top-circle {
+header .top-circle {
   width: 35%;
   top: 0;
   right: 0;
 }
 
 /* Skills Section */
-section.skills img.dots {
+.skills .dots {
   width: 32%;
   top: -6vw;
   right: 0;
 }
-section.skills img.left-square {
+.skills .left-square {
   width: 45%;
   top: 15%;
   left: 0;
 }
-section.skills img.right-square {
+.skills .right-square {
   width: 40%;
   top: 13%;
   right: 0;
 }
 
 /* Connect Section */
-section.connect img.square {
+.connect .square {
   width: 25%;
   bottom: 0;
   left: 0;
   z-index: 1;
 }
-section.connect img.circle {
+.connect .circle {
   width: 16%;
   top: 0;
   right: 0;
@@ -216,9 +216,17 @@ section.connect img.circle {
 }
 
 .star {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/star.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.star {
   right: 38%;
   top: 5%;
-  width: 50px;
   z-index: -1;
 }
 
@@ -444,9 +452,6 @@ header .intro {
   .projects .offset {
     padding-top: 0px;
   }
-}
-.projects .star {
-  width: 50px;
 }
 @media (max-width: 900px) {
   .projects .star {

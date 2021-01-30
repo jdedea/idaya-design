@@ -1,17 +1,17 @@
-@mixin width($width) {
+@mixin shape-width($width) {
   width: $width;
 }
 
 .shapes {
   position: absolute;
-  z-index: -3;
+  z-index: -2;
 }
 
 /* Header */
 
 header {
-  img.top-circle {
-    @include width(35%);
+  .top-circle {
+    @include shape-width(35%);
     top: 0;
     right: 0;
   }
@@ -19,21 +19,21 @@ header {
 
 /* Skills Section */
 
-section.skills {
-  img.dots {
-    @include width(32%);
+.skills {
+  .dots {
+    @include shape-width(32%);
     top: -6vw;
     right: 0;
   }
 
-  img.left-square {
-    @include width(45%);
+  .left-square {
+    @include shape-width(45%);
     top: 15%;
     left: 0;
   }
 
-  img.right-square {
-    @include width(40%);
+  .right-square {
+    @include shape-width(40%);
     top: 13%;
     right: 0;
   }
@@ -41,16 +41,16 @@ section.skills {
 
 /* Connect Section */
 
-section.connect {
-  img.square {
-    @include width(25%);
+.connect {
+  .square {
+    @include shape-width(25%);
     bottom: 0;
     left: 0;
     z-index: 1;
   }
 
-  img.circle {
-    @include width(16%);
+  .circle {
+    @include shape-width(16%);
     top: 0;
     right: 0;
     z-index: 1;
