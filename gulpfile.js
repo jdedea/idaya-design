@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
+const sourcemaps = require('gulp-sourcemaps')
 const cleanCSS = require('gulp-clean-css')
 
 sass.compiler = require('node-sass')
@@ -7,8 +8,10 @@ sass.compiler = require('node-sass')
 gulp.task('sass', async () => {
   return gulp
     .src('./css/style.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(cleanCSS())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./css'))
 })
 
