@@ -196,16 +196,10 @@ header {
   .content {
     @extend %grid-med;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-  }
-
-  .pfp {
-    @include mq($med) {
-      width: 60%;
-    }
-    padding: 1vw;
-    z-index: 2;
+    //height: 60vh;
+    text-align: center;
   }
 
   .left,
